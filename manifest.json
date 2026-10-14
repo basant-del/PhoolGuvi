@@ -1,22 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "GUVI Auto-Watcher & Quiz Helper (v2.0)",
-  "version": "2.0",
-  "description": "Tailored for HCL GUVI Plyr video player, multi-question Activity cards, and stepper TOC sidebar.",
+  "name": "GUVI Direct API Auto-Solver (v3.0)",
+  "version": "3.0",
+  "description": "Directly uses GUVI's internal authorize.ajax & CourseContent APIs to instant-complete videos, solve quizzes in <1s, and auto-advance.",
   "permissions": ["storage"],
   "host_permissions": ["*://*.guvi.in/*"],
   "content_scripts": [
     {
       "matches": ["*://*.guvi.in/courses-video/*"],
-      "js": ["interceptor.js"],
-      "run_at": "document_start",
-      "world": "MAIN"
-    },
-    {
-      "matches": ["*://*.guvi.in/courses-video/*"],
-      "js": ["content.js"],
+      "js": ["engine.js"],
       "run_at": "document_idle",
-      "world": "ISOLATED"
+      "world": "MAIN"
     }
   ]
 }
