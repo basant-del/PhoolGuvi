@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "GUVI Auto-Watcher & Quiz Helper",
-  "version": "1.0",
-  "description": "Speeds up course videos, inspects network payloads for quiz answers, and auto-advances.",
+  "name": "GUVI Auto-Watcher & Quiz Helper (v2.0)",
+  "version": "2.0",
+  "description": "Tailored for HCL GUVI Plyr video player, multi-question Activity cards, and stepper TOC sidebar.",
   "permissions": ["storage"],
   "host_permissions": ["*://*.guvi.in/*"],
   "content_scripts": [
